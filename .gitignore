@@ -1,0 +1,106 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ─── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+ENV/
+env/
+.env.bak
+env.bak/
+
+# ─── Environment / secrets ────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# ─── Testing ──────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+nosetests.xml
+test-results/
+
+# ─── Type checking ────────────────────────────────────────────────────────────
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyright/
+.ruff_cache/
+
+# ─── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# ─── Data outputs (generated — not committed) ─────────────────────────────────
+data/outputs/
+!data/outputs/.gitkeep
+data/samples/*.parquet
+data/samples/*.json
+
+# Keep sample CSVs for demo purposes
+!data/samples/*.csv
+
+# ─── Pipeline outputs ─────────────────────────────────────────────────────────
+*.pdf
+cost_log.jsonl
+eval_results.jsonl
+
+# ─── IDEs ─────────────────────────────────────────────────────────────────────
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ─── uv / pip ─────────────────────────────────────────────────────────────────
+.uv/
+uv.lock
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ─── LangSmith / LangChain tracing ───────────────────────────────────────────
+langchain_trace/
+langsmith_trace/
+
+# ─── DuckDB ───────────────────────────────────────────────────────────────────
+*.duckdb
+*.duckdb.wal
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+*.log
+logs/
