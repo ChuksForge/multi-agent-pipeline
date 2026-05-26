@@ -79,7 +79,12 @@ pipeline-benchmark = "pipeline.scripts.cost_benchmark:main"
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 testpaths = ["tests"]
+pythonpath = ["src", "."]
 addopts = "-v --tb=short --cov=src/pipeline --cov-report=term-missing"
+filterwarnings = [
+    "ignore::UserWarning:pydantic",
+    "ignore::DeprecationWarning:pydantic",
+]
 
 [tool.ruff]
 src = ["src"]

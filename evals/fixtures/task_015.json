@@ -1,0 +1,11 @@
+{
+  "task_id": "task_015",
+  "category": "edge_case",
+  "raw_task": "Summarise the sales data with a single sentence. Output format: json.",
+  "data_source": "data/samples/sales_monthly.csv",
+  "expected": {
+    "status": "complete",
+    "min_rows": 100,
+    "allow_partial": true
+  }
+}

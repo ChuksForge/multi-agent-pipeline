@@ -1,0 +1,11 @@
+{
+  "task_id": "task_014",
+  "category": "edge_case",
+  "raw_task": "Load the malformed JSON file and attempt analysis.",
+  "data_source": "data/samples/malformed.json",
+  "expected": {
+    "status": "partial",
+    "min_rows": 0,
+    "allow_partial": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "task_id": "task_012",
+  "category": "full_pipeline",
+  "raw_task": "Analyse user events for unusual activity patterns and generate a JSON report.",
+  "data_source": "data/samples/user_events.json",
+  "expected": {
+    "status": "complete",
+    "min_rows": 20,
+    "allow_partial": true,
+    "min_word_count": 0
+  }
+}

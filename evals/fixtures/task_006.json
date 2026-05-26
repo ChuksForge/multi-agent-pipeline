@@ -1,0 +1,13 @@
+{
+  "task_id": "task_006",
+  "category": "analysis_only",
+  "raw_task": "Detect anomalies in the server CPU and memory metrics timeseries.",
+  "data_source": "data/samples/server_metrics.parquet",
+  "expected": {
+    "status": "complete",
+    "min_rows": 50,
+    "min_anomaly_count": 1,
+    "max_anomaly_rate": 0.3,
+    "allow_partial": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "task_id": "task_001",
+  "category": "etl_only",
+  "raw_task": "Load and validate the sales CSV file. Check schema and null rates.",
+  "data_source": "data/samples/sales_monthly.csv",
+  "expected": {
+    "status": "complete",
+    "min_rows": 100,
+    "required_columns": [
+      "date",
+      "revenue",
+      "units"
+    ],
+    "max_anomaly_rate": 1.0,
+    "allow_partial": false
+  }
+}

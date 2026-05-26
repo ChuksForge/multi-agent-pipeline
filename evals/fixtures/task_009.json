@@ -1,0 +1,22 @@
+{
+  "task_id": "task_009",
+  "category": "full_pipeline",
+  "raw_task": "Load sales_monthly.csv, detect revenue anomalies, and generate a markdown report.",
+  "data_source": "data/samples/sales_monthly.csv",
+  "expected": {
+    "status": "complete",
+    "min_rows": 100,
+    "required_columns": [
+      "date",
+      "revenue",
+      "units"
+    ],
+    "max_anomaly_rate": 0.2,
+    "required_report_sections": [
+      "Executive Summary",
+      "Anomaly Detection"
+    ],
+    "min_word_count": 100,
+    "allow_partial": false
+  }
+}

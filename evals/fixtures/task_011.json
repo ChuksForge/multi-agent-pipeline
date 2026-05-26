@@ -1,0 +1,20 @@
+{
+  "task_id": "task_011",
+  "category": "full_pipeline",
+  "raw_task": "Load server metrics Parquet, detect CPU spikes, generate a full report.",
+  "data_source": "data/samples/server_metrics.parquet",
+  "expected": {
+    "status": "complete",
+    "min_rows": 50,
+    "required_columns": [
+      "timestamp",
+      "cpu_pct"
+    ],
+    "min_anomaly_count": 1,
+    "required_report_sections": [
+      "Executive Summary"
+    ],
+    "min_word_count": 100,
+    "allow_partial": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "task_004",
+  "category": "etl_only",
+  "raw_task": "Load user events JSON file and validate the structure.",
+  "data_source": "data/samples/user_events.json",
+  "expected": {
+    "status": "complete",
+    "min_rows": 20,
+    "required_columns": [
+      "user_id",
+      "event",
+      "timestamp"
+    ],
+    "allow_partial": true
+  }
+}

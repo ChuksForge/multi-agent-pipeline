@@ -1,0 +1,16 @@
+{
+  "task_id": "task_002",
+  "category": "etl_only",
+  "raw_task": "Load server metrics from the Parquet file. Validate the schema.",
+  "data_source": "data/samples/server_metrics.parquet",
+  "expected": {
+    "status": "complete",
+    "min_rows": 50,
+    "required_columns": [
+      "timestamp",
+      "cpu_pct",
+      "mem_gb"
+    ],
+    "allow_partial": false
+  }
+}
