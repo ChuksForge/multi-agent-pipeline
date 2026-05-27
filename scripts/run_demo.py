@@ -23,6 +23,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 
 from pipeline.middleware.logger import configure_logging
 from pipeline.core.schemas import CostSummary, PipelineStatus
+from pipeline.orchestrator.graph import build_graph, run_pipeline
 
 
 DEFAULT_TASK = (
@@ -92,7 +93,8 @@ async def main() -> None:
     if args.output_format != "markdown":
         raw_task += f" Output format: {args.output_format}."
 
-    final_state = run_pipeline_sync(graph, raw_task=raw_task)
+    # AFTER — already inside an async function, just await directly
+    final_state = await run_pipeline(graph, raw_task=raw_task)    
     elapsed = time.monotonic() - start
 
     # Extract results
