@@ -151,7 +151,7 @@ Revenue increased 14.2% month-over-month.
 ## Recommendation
 Investigate refund processing changes introduced during week 16.
 
-![Demo](demo/demo-c.png)
+![Demo](demo/demo-b.png)
 ```
 
 ### Generated Chart Spec
