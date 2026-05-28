@@ -176,7 +176,7 @@ multi-agent-pipeline/
 
 ```bash
 # 1. Clone and install
-git clone https://github.com/YOUR_USERNAME/multi-agent-pipeline.git
+git clone https://github.com/chuksforge/multi-agent-pipeline.git
 cd multi-agent-pipeline
 uv sync --extra dev          # or: pip install -e ".[dev]"
 
@@ -299,10 +299,16 @@ pytest tests/integration/test_full_pipeline.py -v
 
 ---
 
+## Built by ChuksForge AI Solutions Ltd.
+
+Production-grade AI agents, tools, and applications.
+
+**Website:** [chuksforge.com](https://chuksforge.com)
+**GitHub:** [@ChuksForge](https://github.com/ChuksForge) · **Email:** [hello@chuksforge.com](mailto:hello@chuksforge.com) · **Telegram:** [@ChuksForge](https://t.me/ChuksForge)
+
+
 ## License
 
 MIT
 
 ---
-
-*Built to demonstrate production ML infrastructure thinking: typed contracts between agents, cost-aware model routing, three-tier failure recovery, and a benchmarkable eval harness — the patterns that matter in real ML platform work.*
